@@ -1,0 +1,26 @@
+// Основной шрифт на сайте с предзагрузкой
+
+@font-face {
+    font-family: "Montserrat-Regular";
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: local("Roboto"),
+        url(assets/fonts/Montserrat-Regular.woff)
+        format("woff2"),
+        url(assets/fonts/Montserrat-Regular.ttf)
+        format("truetype");
+}
+
+@font-face {
+    font-family: "Montserrat-Semibold";
+    font-style: normal;
+    font-weight: 600;
+    font-display: swap;
+    src: local("Montserrat-Semibold"),
+        url(assets/fonts/Montserrat-Semibold.woff)
+        format("woff2"),
+        url(assets/fonts/Montserrat-Semibold.woff)
+        format("truetype");
+}
+

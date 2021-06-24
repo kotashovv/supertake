@@ -1,0 +1,171 @@
+.faq {
+    padding: 35px 0 30px;
+    &__body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    &__title {
+        margin-bottom: 30px;
+        h4 {
+            margin:  0;
+            font-family: $ffsemi;
+            font-weight: 600;
+            font-size: $fsbig;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            color: $cm;
+        }
+    }
+
+    &__qestions {
+        width: 100%;
+        text-align: center;
+    }
+    &__qestion {
+        margin-bottom: 30px;
+        .accordeon-btn {
+            position: relative;
+            padding: 40px 20px 40px 100px;
+            width: 100%;
+            border: 2px solid $ca;
+            background-color: transparent;
+            font-family: $ffmain;
+            font-weight: 400;
+            font-size: $fsmain;
+            letter-spacing: 2px;
+            cursor: pointer;
+            color: $ca;
+            border-bottom: none;
+            margin-top: 30px;
+            &:first-child {
+                margin-top: 0;
+            }
+            &.active {
+                border-bottom: 2px solid $ca;
+                &::before {
+                    opacity: 0;
+                }
+                &::after {
+                    opacity: 0;
+                }
+                span {
+                    transform: rotate(90deg);
+                }
+            }
+            span {
+                position: absolute;
+                top: 40px;
+                left: 80px;
+                width: 2px;
+                height: 40px;
+                background-color: $ca;
+                transition: transform .15s ease;
+                border-radius: 1px;
+            }
+            &::before {
+                content: '';
+                position: absolute;
+                top: 71px;
+                left: 63px;
+                transform: rotate(45deg);
+                background-color: $ca;
+                width: 20px;
+                height: 2px;
+                transition: opacity .2s ease;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                top: 71px;
+                left: 79px;
+                transform: rotate(-45deg);
+                background-color: $ca;
+                width: 20px;
+                height: 2px;
+                transition: opacity .2s ease;
+        
+            }
+        }
+        .accordeon-info {
+            max-height: 0;
+            text-align: center;
+            border: 2px solid $ca;
+            overflow: hidden;
+            border-top: none;
+            transition: all .15s ease;
+            p {
+                font-family: $ffmain;
+                font-weight: 400;
+                font-size: $fsmain;
+                line-height: 1.2;
+                letter-spacing: 2px;
+                color: $ca;
+                padding: 0 10px;
+            }
+        }
+        &:nth-child(2n) {
+            .accordeon-btn {
+                border-color: $cm;
+                color: $cm;
+                span {
+                    background-color: $cm;
+                }
+                &::before {
+                    background-color: $cm;
+                }
+                &::after {
+                    background-color: $cm;
+                }
+            }
+            .accordeon-info {
+                border-color: $cm;
+                p {
+                    color: $cm;
+                }
+            }
+
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .faq {
+        &__title {
+            h4 {
+                font-size: $fsbigm - 2px;
+                text-align: center;
+            }
+        }
+        &__qestion {
+            margin-bottom: 20px;
+            .accordeon-btn {
+                font-size: $fsmainm;
+                padding: 20px 10px 20px 25px;
+                span {
+                    left: 15px;
+                    top: 15px;
+                    height: 25px;
+                }
+                &::before {
+                    left: 7px;
+                    top: 34px;
+                    width: 10px;
+                }
+                &::after {
+                    left: 15px;
+                    top: 34px;
+                    width: 10px;
+                }
+            }
+            .accordeon-info {
+                p {
+                    font-size: $fsmainm;
+
+                }
+            }
+        }
+    }
+}

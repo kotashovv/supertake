@@ -1,0 +1,139 @@
+.catalog {
+    padding: 30px 10px;
+    margin: 0 auto;
+    max-width: 1100px;
+    
+    &__title {
+        margin-bottom: 20px;
+        h3 {
+            font-size: 36px;
+            color: $ca;
+            font-family: $ffsemi;
+            margin: 0;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 30px;
+        p {
+            font-family: $ffmain;
+            font-size: 24px;
+            font-weight: 400;
+            color: $ca;
+            margin: 0;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        justify-content: space-between;
+    }
+
+    &__product {
+        margin-right: 30px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin-bottom: 30px;
+        max-width: 30%;
+        &:nth-child(3n) {
+            margin-right: 0;
+        }
+        a {
+            text-decoration: none;
+            display: block;
+            transition: box-shadow .15s ease;
+            img {
+                width: 100%;
+            }
+            &:hover {
+                box-shadow: 0px 0px 15px 0px rgba(16, 33, 47, 0.23);
+                
+            }
+        }
+    }
+}
+
+.product {
+    &__name {
+        h4 {
+            color: $ca;
+            font-family: $ffmain;
+            font-weight: 400;
+            font-size: $fsmain;
+            margin: 0;
+            margin: 15px 0 20px;
+        }
+    }
+
+    &__price {
+        color: $ca;
+        font-family: $ffmain;
+        font-weight: 400;
+        font-size: $fsmain;
+    }
+    
+}
+.invisible-box {
+    width: 270px;
+    height: 270px;
+}
+.catalog {
+
+    &__arrows {
+        position: absolute;
+        bottom: 140px;
+        right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+.arrow-back {
+}
+.arrow-nav {
+    margin: 10px;
+    border: 2px solid $ca;
+    padding: 30px;
+    transition: all .15s ease;
+    svg {
+        fill: #3D4056;
+    }
+    &:hover {
+        >svg {
+            fill: #fff;
+        }
+        background-color: #636577;
+        border-color: #636577;
+    }
+    &:active {
+        background-color: #3d4056;
+        border-color: #3D4056;
+    }
+}
+.arrow-next {
+}
+
+@media (max-width:767px) {
+    .catalog {
+        &__product {
+            margin: 0 0 20px;
+            max-width: 47%;
+        }
+        &__arrows {
+            position: static;
+            width: 100%;
+        }
+    }
+    .arrow-nav {
+        padding: 10px 15px;
+        svg {
+            width: 20px;
+        }
+    }
+    .invisible-box {
+        display: none;
+    }
+}

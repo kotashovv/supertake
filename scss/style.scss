@@ -1,0 +1,37 @@
+//Переменные
+@import 'sections/vars';
+
+// обнуление Стилей
+
+@import 'sections/normalize';
+
+// шрифты
+@import 'sections/fonts';
+
+// Базовая разметка страницы
+@import 'sections/grids';
+
+//Интерфейс элементы
+@import 'sections/interface';
+
+//Шапка сайта
+@import 'sections/header';
+
+
+//Содержимое страницы
+@import 'sections/categories';
+@import 'sections/about';
+@import 'sections/breaker';
+@import 'sections/offer';
+@import 'sections/contacts';
+@import 'sections/catalog';
+@import 'sections/faq';
+@import 'sections/product-page';
+
+
+//Подвал сайта
+@import 'sections/footer';
+
+
+
+

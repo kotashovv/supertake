@@ -1,0 +1,64 @@
+.contacts {
+    padding: 75px 50px 50px;
+    background-image: url(/assets/img/Карта.jpg);
+    background-position: center;
+    background-size: contain;
+    &__wrap {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__textbox {
+        width: 100%;
+        max-width: 720px;
+        padding: 15px 10px 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #fff;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        h4 {
+            font-family: $ffsemi;
+            font-size: $fsbig;
+            color: $cm;
+            margin: 0;
+            text-align: center;
+        }
+    }
+
+    &__text {
+        p {
+            font-family: $ffmain;
+            color: $cm;
+            margin: 0;
+            margin-bottom: 15px;
+            font-size: $fsmain;
+            line-height: 1.2;
+            text-align: center;
+        }
+        max-width: 365px;
+    }
+}
+
+@media (max-width:768px) {
+    .contacts {
+        padding: 10px 30px;
+        &__title {
+            margin-bottom: 10px;
+            h4 {
+                font-size: $fsbigm;
+            }
+        }
+        &__text {
+            p {
+                font-size: $fsmainm;
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

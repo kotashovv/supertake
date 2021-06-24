@@ -1,0 +1,178 @@
+.footer {
+    padding: 50px 0;
+    background-color: $cm;
+    &__body {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    &__title {
+        margin-bottom: 25px;
+        h4 {
+            margin: 0;
+            text-transform: uppercase;
+            font-size: $fsbig;
+            color: #fff;
+            text-align: center;
+            font-family: $ffsemi;
+            font-weight: 600;
+        }
+    }
+
+    &__subtitle {
+        margin-bottom: 40px;
+        p {
+            margin: 0;
+            font-size: $fsmain;
+            color: #fff;
+            text-align: center;
+            font-family: $ffmain;
+            font-weight: 400;
+        }
+    }
+
+    &__form {
+        max-width: 600px;
+        width: 100%;
+        margin-bottom: 40px;
+        form {
+            display: flex;
+            position: relative;
+        }
+        input[type=text] {
+            width: 100%;
+            padding: 10px;
+            font-size: 24px;
+            line-height: 30px;
+            text-align: center;
+            border: none;
+            color: #000;
+            font-family: $ffmain;
+            &:focus {
+                outline: none;
+                border: none;
+            }
+        }
+        button[type=submit] {
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 50px;
+            height: 100%;
+            cursor: pointer;
+            background-color: #fff;
+            border: none;
+            transform: translateX(-1px);
+            background-image: url(/assets/img/icons/Стрелка.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+    }
+
+    &__socials {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        margin-bottom: 25px;
+        a {
+            text-decoration: none;
+            font-size: 24px;
+            font-family: $ffmain;
+            font-weight: 400;
+            text-align: center;
+            color: #fff;
+            
+        }
+    }
+
+    &__pay {
+
+    }
+
+    &__pay-sytems {
+        display: flex;
+        justify-content: center;
+    }
+}
+.footer-pay {
+
+    &__text {
+        text-align: center;
+        font-family: $ffmain;
+        font-size: 24px;
+        font-weight: 400;
+        color: #fff;
+        margin-bottom: 25px;
+    }
+}
+.pay-system {
+
+    &__item {
+        margin: 0 4vw;
+    }
+}
+
+@media (max-width:768px) {
+    .footer {
+        &__title {
+            h4 {
+                font-size: 24px;
+            }
+        }
+        &__subtitle {
+            p {
+                font-size: 14px;
+            }
+        }
+        &__form {
+            form {
+                input[type=text] {
+                    font-size: 14px;
+                }
+            }
+        }
+        &__socials {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            a {
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .footer {
+        padding: 15px 0;
+        &__socials {
+            align-items: flex-start;
+            a {
+                font-size: 14px;
+                margin-bottom: 30px;
+            }
+        }
+        &__pay {
+            width: 100%;
+        }
+        &-pay__text {
+            font-size: 14px;
+        }
+        &__pay-sytems {
+            justify-content: space-around;
+        }
+
+    }
+    .pay-system {
+
+        &__item {
+            margin: 0;
+            img {
+                width: 60px;
+                height: 60px;
+            }
+        }
+    }
+}
