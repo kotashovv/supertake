@@ -355,7 +355,7 @@ template {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Montserrat-Semibold"), url(assets/fonts/Montserrat-Semibold.woff) format("woff2"), url(assets/fonts/Montserrat-Semibold.ttf) format("truetype");
+  src: local("Montserrat-Semibold"), url(assets/fonts/Montserrat-SemiBold.woff) format("woff2"), url(assets/fonts/Montserrat-SemiBold.ttf) format("truetype");
 }
 
 .container {
