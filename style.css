@@ -355,7 +355,7 @@ template {
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: local("Montserrat-Semibold"), url(assets/fonts/Montserrat-Semibold.woff) format("woff2"), url(assets/fonts/Montserrat-Semibold.woff) format("truetype");
+  src: local("Montserrat-Semibold"), url(assets/fonts/Montserrat-Semibold.woff) format("woff2"), url(assets/fonts/Montserrat-Semibold.ttf) format("truetype");
 }
 
 .container {
@@ -1192,7 +1192,7 @@ template {
 
 .contacts {
   padding: 75px 50px 50px;
-  background-image: url(/assets/img/Карта.jpg);
+  background-image: url(assets/img/Карта.jpg);
   background-position: center;
   background-size: contain;
 }
