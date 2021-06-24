@@ -1264,6 +1264,7 @@ template {
   }
   .contacts__title h4 {
     font-size: 24px;
+    text-transform: uppercase;
   }
   .contacts__text p {
     font-size: 14px;
@@ -1953,7 +1954,7 @@ template {
   -webkit-transform: translateX(-1px);
       -ms-transform: translateX(-1px);
           transform: translateX(-1px);
-  background-image: url(/assets/img/icons/Стрелка.svg);
+  background-image: url(assets/img/icons/Стрелка.svg);
   background-position: center;
   background-repeat: no-repeat;
 }
